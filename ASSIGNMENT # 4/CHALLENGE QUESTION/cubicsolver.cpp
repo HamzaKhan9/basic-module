@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     double a , b , c , d;
-    double f , g, h , i , j , k , l , m , n , p , r , s , t , u;
+    double f , g, h , i , j , k , l , m , n , p , r , s , t , u , v , w , x;
     double c1x1 , c1x2 , c1x3 , c2x1 , c3x1 , c3x2 , c3x3;
     cout << "\n\n***************************** CUBIC EQUATION SOLVER *********************************";
     cout << "\n\n                           ENTER CO-EFFICIENT a: "; cin >> a;
@@ -27,6 +27,8 @@ int main()
     s=cbrt(r);
     t=-(g/2)-sqrt(h);
     u=cbrt(t);
+    v=-(s+u)/2-(b/(3*a));
+    w=((s-u)*sqrt(3))/2;
     c1x1=(2*j*(cos(k/3)))-(b/(3*a));
     c1x2=l*(m+n)+p;
     c1x3=l*(m-n)+p;
@@ -54,8 +56,8 @@ int main()
     {
             cout << "\n\n*************** 1 ROOT IS REAL AND REMAINING TWO ROOTS ARE IMAGINARY ****************";
             cout << "\n\n                           x1 = " << c2x1;
-            cout << "\n                           x2 = SECOND ROOT IS IMAGINARY or UNREAL";
-            cout << "\n                           x3 = THIRD ROOT IS ALSO IMAGINARY OR UNREAL";
+            cout << "\n                           x2 = " << v << " + i." << w;
+            cout << "\n                           x3 = " << v << " - i." << w;
     }
     return 0;
 }
