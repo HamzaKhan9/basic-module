@@ -1,5 +1,6 @@
-d#include <iostream>
+#include <iostream>
 #include <cmath>
+#include <windows.h>
 using namespace std;
 int main()
 {
@@ -20,11 +21,12 @@ int main()
     switch (menu)
     {
      case 1:
+         system("cls");
      cout << "\n\n                                  ADDITION OF TW NUMBERS";
      cout << "\n            ENTER FIRST NUMBER = "; cin >> anum1;
      cout << "\n            ENTER SECOND NUMBER = "; cin >> anum2;
-     add = anum1 + anum2;
-     cout << "\n                ANSWER = " << add;
+
+     cout << "\n                ANSWER = " <<anum1 + anum2;
      break;
      case 2:
      cout << "\n\n                                  SUBTRACTION OF TWO NUMBERS";

@@ -7,12 +7,12 @@ int main()
     int x;
     cout << "\n\nENTER THE CHARACTER YOU WANT TO KNOW IS UPPER CASE LETTER, LOWER CASE LETTER, DIGIT OR A SPECIAL CHARACTER = ";
     cin >> ch;
-    x= int(ch);
+     x= ch;
     if(x>=48&&x<=57)
     {
         cout << "\n\n       IT'S A DIGIT";
     }
-    else if(x>=97&&x<=112)
+    else if(x>=97&&x<=122)
     {
         cout << "\n\n       IT'S A LOWER CASE LETTER";
     }
